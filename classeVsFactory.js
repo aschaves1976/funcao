@@ -1,3 +1,4 @@
+// Classe
 class Pessoa{
     constructor(nome){
         this.nome = nome
@@ -11,7 +12,7 @@ class Pessoa{
 const p1 = new Pessoa('João')
 p1.falar()
 
-// Melhor forma de trabalhar
+// Factory - Melhor forma de trabalhar
 const criarPessoa = nome =>{
     return {
         falar: () => console.log(`Olá, meu nome é ${nome}`)
